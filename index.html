@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ExplainLikeMyTeacher — AI-powered learning assistant that explains lecture content like your favorite teacher. Download the Android app now.">
+    <meta name="keywords" content="AI learning, VARK, mind maps, quiz generator, teacher AI, education app, Android learning app">
+    <meta name="author" content="Bro Coders">
+    <meta name="theme-color" content="#0a0a1a">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="ExplainLikeMyTeacher — Learn Like Never Before">
+    <meta property="og:description" content="AI-powered mobile learning assistant. Upload lectures, ask questions, get teacher-style explanations, mind maps, quizzes & more.">
+    <meta property="og:type" content="website">
+
+    <title>ExplainLikeMyTeacher — AI Learning Assistant</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ============ NAVBAR ============ -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <span class="logo-icon">🎓</span>
+                <span class="logo-text">ExplainLikeMyTeacher</span>
+            </a>
+            <div class="nav-links">
+                <a href="#features" class="nav-link">Features</a>
+                <a href="#vark" class="nav-link">VARK</a>
+                <a href="#how-it-works" class="nav-link">How It Works</a>
+                <a href="https://expo.dev/accounts/simran1403/projects/ExplainLikeMyTeacher/builds/84bf59e0-24e1-4a21-b27f-16e690562a61" target="_blank" rel="noopener" class="nav-link nav-cta">Download APK</a>
+            </div>
+            <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu">
+        <a href="#features" class="mobile-link">Features</a>
+        <a href="#vark" class="mobile-link">VARK</a>
+        <a href="#how-it-works" class="mobile-link">How It Works</a>
+        <a href="https://expo.dev/accounts/simran1403/projects/ExplainLikeMyTeacher/builds/84bf59e0-24e1-4a21-b27f-16e690562a61" target="_blank" rel="noopener" class="mobile-link mobile-cta">Download APK</a>
+    </div>
+
+    <!-- ============ HERO SECTION ============ -->
+    <section class="hero" id="hero">
+        <!-- Animated background particles -->
+        <div class="hero-bg">
+            <div class="color-bends-canvas" id="hero-color-bends"></div>
+            <div class="grid-overlay"></div>
+        </div>
+
+        <div class="hero-content">
+            <div class="hero-badge animate-on-scroll">
+                <span class="badge-dot"></span>
+                Available for Android
+            </div>
+
+            <h1 class="hero-title animate-on-scroll">
+                <span class="gradient-text">Explain Like My Teacher</span>
+            </h1>
+
+            <p class="hero-subtitle animate-on-scroll">
+                Upload your lectures. Ask questions. Get clear, calm, teacher-style
+                explanations powered by AI — with mind maps, quizzes, and more.
+            </p>
+
+            <div class="hero-actions animate-on-scroll">
+                <a href="https://expo.dev/accounts/simran1403/projects/ExplainLikeMyTeacher/builds/84bf59e0-24e1-4a21-b27f-16e690562a61" target="_blank" rel="noopener" class="btn btn-primary" id="hero-download-btn">
+                    <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                        <polyline points="7 10 12 15 17 10"/>
+                        <line x1="12" y1="15" x2="12" y2="3"/>
+                    </svg>
+                    Download for Android
+                </a>
+                <a href="#features" class="btn btn-secondary" id="hero-learn-btn">
+                    Explore Features
+                    <svg class="btn-icon-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="5" y1="12" x2="19" y2="12"/>
+                        <polyline points="12 5 19 12 12 19"/>
+                    </svg>
+                </a>
+            </div>
+
+            <div class="hero-stats animate-on-scroll">
+                <div class="stat">
+                    <span class="stat-number" data-count="5">0</span><span class="stat-plus">+</span>
+                    <span class="stat-label">AI Features</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number" data-count="2">0</span>
+                    <span class="stat-label">Languages</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number" data-count="100">0</span><span class="stat-plus">%</span>
+                    <span class="stat-label">Free & Open</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="mouse-wheel"></div>
+            </div>
+            <span>Scroll to explore</span>
+        </div>
+    </section>
+
+    <!-- ============ FEATURES SECTION ============ -->
+    <section class="features" id="features">
+        <div class="section-container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">Features</span>
+                <h2 class="section-title">Everything You Need to <span class="gradient-text">Ace Your Studies</span></h2>
+                <p class="section-desc">Powerful AI tools designed to make learning feel personal, structured, and effective.</p>
+            </div>
+
+            <div class="stack-wrapper animate-on-scroll">
+                <div class="stack-container" id="features-stack">
+                    <div class="stack-card" data-stack-id="1">
+                        <div class="stack-card-inner">
+                            <div class="feature-icon-wrap"><div class="feature-icon">💬</div></div>
+                            <h3 class="feature-title">Teacher Chat</h3>
+                            <p class="feature-desc">Upload any lecture file — video, audio, or PDF — and ask questions in natural language. Get clear, teacher-style AI explanations.</p>
+                        </div>
+                    </div>
+                    <div class="stack-card" data-stack-id="2">
+                        <div class="stack-card-inner">
+                            <div class="feature-icon-wrap"><div class="feature-icon">🧠</div></div>
+                            <h3 class="feature-title">Interactive Mind Maps</h3>
+                            <p class="feature-desc">Upload your handwritten notes or PDFs, and watch as AI transforms them into beautiful, zoomable, interactive mind maps you can explore.</p>
+                        </div>
+                    </div>
+                    <div class="stack-card" data-stack-id="3">
+                        <div class="stack-card-inner">
+                            <div class="feature-icon-wrap"><div class="feature-icon">📝</div></div>
+                            <h3 class="feature-title">Quiz Generator</h3>
+                            <p class="feature-desc">Auto-generate MCQ quizzes from your lecture material. Test yourself, submit answers, and see your scores instantly.</p>
+                        </div>
+                    </div>
+                    <div class="stack-card" data-stack-id="4">
+                        <div class="stack-card-inner">
+                            <div class="feature-icon-wrap"><div class="feature-icon">🔊</div></div>
+                            <h3 class="feature-title">Text-to-Speech</h3>
+                            <p class="feature-desc">Every AI response can be played back as audio with adjustable playback speed. Learn while on the go.</p>
+                        </div>
+                    </div>
+                    <div class="stack-card" data-stack-id="5">
+                        <div class="stack-card-inner">
+                            <div class="feature-icon-wrap"><div class="feature-icon">🚀</div></div>
+                            <h3 class="feature-title">PBL Planner</h3>
+                            <p class="feature-desc">AI generates Project-Based Learning scenarios with guiding questions, turning your lectures into actionable projects.</p>
+                        </div>
+                    </div>
+                    <div class="stack-card" data-stack-id="6">
+                        <div class="stack-card-inner">
+                            <div class="feature-icon-wrap"><div class="feature-icon">📚</div></div>
+                            <h3 class="feature-title">Chat History</h3>
+                            <p class="feature-desc">All your conversations are saved securely. Revisit past sessions with expandable message threads anytime.</p>
+                        </div>
+                    </div>
+                </div>
+                <p class="stack-hint">Drag or click to shuffle through features</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ VARK SECTION ============ -->
+    <section class="vark" id="vark">
+        <div class="section-container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">Learning Science</span>
+                <h2 class="section-title">Powered by <span class="gradient-text">VARK Learning Model</span></h2>
+                <p class="section-desc">Our app is designed around the VARK learning theory — addressing all four learning styles to help every type of learner succeed.</p>
+            </div>
+
+            <div class="chroma-grid" id="vark-chroma-grid">
+                <article class="chroma-card" id="vark-visual" style="--card-border: #8c3a76; --card-gradient: linear-gradient(145deg, #8c3a76, #40347e);">
+                    <div class="chroma-card-body">
+                        <div class="vark-letter">V</div>
+                        <h3 class="vark-title">Visual</h3>
+                        <p class="vark-desc">Interactive mind maps transform complex notes into visual hierarchies. See connections between concepts at a glance with our zoomable, pannable map interface.</p>
+                        <div class="vark-features">
+                            <span class="vark-feature-tag">Mind Maps</span>
+                            <span class="vark-feature-tag">Diagrams</span>
+                            <span class="vark-feature-tag">Flowcharts</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="chroma-card" id="vark-auditory" style="--card-border: #891253; --card-gradient: linear-gradient(210deg, #891253, #40347e);">
+                    <div class="chroma-card-body">
+                        <div class="vark-letter">A</div>
+                        <h3 class="vark-title">Auditory</h3>
+                        <p class="vark-desc">Text-to-speech converts every AI explanation into audio you can listen to. Adjust playback speed and learn like you're in a real lecture hall.</p>
+                        <div class="vark-features">
+                            <span class="vark-feature-tag">Text-to-Speech</span>
+                            <span class="vark-feature-tag">Audio Playback</span>
+                            <span class="vark-feature-tag">Speed Control</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="chroma-card" id="vark-reading" style="--card-border: #8c3a76; --card-gradient: linear-gradient(165deg, #8c3a76, #891253);">
+                    <div class="chroma-card-body">
+                        <div class="vark-letter">R</div>
+                        <h3 class="vark-title">Reading / Writing</h3>
+                        <p class="vark-desc">Get detailed, structured text explanations from the AI teacher. Read through clear answers, take notes, and revisit your chat history anytime.</p>
+                        <div class="vark-features">
+                            <span class="vark-feature-tag">Teacher Chat</span>
+                            <span class="vark-feature-tag">Chat History</span>
+                            <span class="vark-feature-tag">Bilingual</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="chroma-card" id="vark-kinesthetic" style="--card-border: #40347e; --card-gradient: linear-gradient(195deg, #40347e, #891253);">
+                    <div class="chroma-card-body">
+                        <div class="vark-letter">K</div>
+                        <h3 class="vark-title">Kinesthetic</h3>
+                        <p class="vark-desc">Quizzes and PBL scenarios let you learn by doing. Answer questions, see your scores, and work through real-world project scenarios based on your lectures.</p>
+                        <div class="vark-features">
+                            <span class="vark-feature-tag">Quizzes</span>
+                            <span class="vark-feature-tag">PBL Planner</span>
+                            <span class="vark-feature-tag">Hands-On</span>
+                        </div>
+                    </div>
+                </article>
+
+                <div class="chroma-overlay"></div>
+                <div class="chroma-fade"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ HOW IT WORKS SECTION ============ -->
+    <section class="how-it-works" id="how-it-works">
+        <div class="section-container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">Simple Steps</span>
+                <h2 class="section-title">How It <span class="gradient-text">Works</span></h2>
+                <p class="section-desc">Get started in minutes. No complicated setup, no subscriptions.</p>
+            </div>
+
+            <div class="steps-container">
+                <div class="step animate-on-scroll" id="step-1">
+                    <div class="step-number">01</div>
+                    <div class="step-content">
+                        <h3 class="step-title">Download & Sign Up</h3>
+                        <p class="step-desc">Download the APK, create an account with your email in seconds. You're ready to go.</p>
+                    </div>
+                </div>
+
+                <div class="step-connector"></div>
+
+                <div class="step animate-on-scroll" id="step-2">
+                    <div class="step-number">02</div>
+                    <div class="step-content">
+                        <h3 class="step-title">Upload Your Lecture</h3>
+                        <p class="step-desc">Pick any file — video, audio, PDF, or image of your notes. Supports files up to 500 MB.</p>
+                    </div>
+                </div>
+
+                <div class="step-connector"></div>
+
+                <div class="step animate-on-scroll" id="step-3">
+                    <div class="step-number">03</div>
+                    <div class="step-content">
+                        <h3 class="step-title">Ask, Explore, Learn</h3>
+                        <p class="step-desc">Chat with your AI teacher, generate mind maps, take quizzes, or plan projects — all from one app.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ TECH SECTION ============ -->
+    <section class="tech-stack" id="tech-stack">
+        <div class="section-container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">Built With</span>
+                <h2 class="section-title">Cutting-Edge <span class="gradient-text">Technology</span></h2>
+            </div>
+
+            <div class="infinite-menu-wrapper animate-on-scroll">
+                <canvas id="infinite-menu-canvas"></canvas>
+                <h2 class="face-title" id="im-title"></h2>
+                <p class="face-description" id="im-desc"></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ DOWNLOAD / CTA SECTION ============ -->
+    <section class="download" id="download">
+        <div class="download-bg">
+            <div class="gradient-orb orb-4"></div>
+            <div class="gradient-orb orb-5"></div>
+        </div>
+
+        <div class="section-container download-content">
+            <div class="animate-on-scroll">
+                <span class="section-tag section-tag-light">Get Started</span>
+                <h2 class="download-title">Ready to Transform the Way You Learn?</h2>
+                <p class="download-desc">Download ExplainLikeMyTeacher now and experience AI-powered learning that adapts to your style. Currently available for Android devices.</p>
+            </div>
+
+            <div class="download-actions animate-on-scroll">
+                <a href="https://expo.dev/accounts/simran1403/projects/ExplainLikeMyTeacher/builds/84bf59e0-24e1-4a21-b27f-16e690562a61" target="_blank" rel="noopener" class="btn btn-download" id="download-apk-btn">
+                    <div class="btn-download-icon">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="32" height="32">
+                            <path d="M17.523 2.226a.751.751 0 0 0-1.046 0l-1.82 1.82A6.961 6.961 0 0 0 12 3.25a6.961 6.961 0 0 0-2.657.796l-1.82-1.82a.751.751 0 0 0-1.046 1.046l1.545 1.545A7.014 7.014 0 0 0 5 10.75v.5h14v-.5a7.014 7.014 0 0 0-3.022-5.933l1.545-1.545a.751.751 0 0 0 0-1.046zM9.5 9a1 1 0 1 1 0-2 1 1 0 0 1 0 2zm5 0a1 1 0 1 1 0-2 1 1 0 0 1 0 2zM5 12.75v7.5a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-7.5H5z"/>
+                        </svg>
+                    </div>
+                    <div class="btn-download-text">
+                        <span class="btn-small-text">Download for</span>
+                        <span class="btn-big-text">Android</span>
+                    </div>
+                </a>
+
+                <div class="download-note">
+                    <div class="note-icon">ℹ️</div>
+                    <p>iOS version coming soon. Stay tuned!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="footer" id="footer">
+        <div class="section-container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="logo-icon">🎓</span>
+                    <span class="logo-text">ExplainLikeMyTeacher</span>
+                    <p class="footer-tagline">AI-powered learning, designed for every student.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#features">Features</a>
+                    <a href="#vark">VARK Model</a>
+                    <a href="#how-it-works">How It Works</a>
+                    <a href="#download">Download</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Bro Coders. Built with ❤️ for students everywhere.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gl-matrix/2.8.1/gl-matrix-min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
